@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phần Mềm Quản Lý Sinh Viên"
+        android:layout_marginStart="30dp"
+        android:textColor="#00ACC1"
+        android:textSize="25dp">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Tim Kiem: ">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tim Kiem"
+            android:textColorHint="@color/white"
+            tools:ignore="TouchTargetSizeCheck"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="StudentID: ">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/bookID"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:hint="Nhap ID"
+            android:textColorHint="@color/white"
+            tools:ignore="TouchTargetSizeCheck"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="StudentName: ">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/StudentName"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:hint="Nhap Ten Sinh Vien"
+            android:textColorHint="@color/white"
+            tools:ignore="TouchTargetSizeCheck"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Class: ">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/Classst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhap Lop"
+            android:textColorHint="@color/white"
+            tools:ignore="TouchTargetSizeCheck"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Major: ">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/Major"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhap Nganh Hoc"
+            android:textColorHint="@color/white"
+            tools:ignore="TouchTargetSizeCheck"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clickAdd"
+            android:layout_gravity="center"
+
+            android:text="Them"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clickEdit"
+            android:layout_gravity="center"
+            android:text="Sua"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clickRemove"
+            android:layout_gravity="center"
+            android:text="Xoa"></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ListView
+            android:layout_width="wrap_content"
+            android:id="@+id/listView"
+            android:layout_height="wrap_content"></ListView>
+    </LinearLayout>
+
+</LinearLayout>
